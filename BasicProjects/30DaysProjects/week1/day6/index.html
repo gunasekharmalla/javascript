@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>welcome to day 6</h2>
+    <div id="colorDiv"></div>
+    <button onclick="colorGenerator()">generate color</button>
+    <button  style="padding: 10px 20px; font-size: 16px; cursor: pointer;"   onclick="reset()">reset</button>
+    <button onclick="copy()">copy</button>
+    <button onclick="paste()">pate</button>
+        <button onclick="vibrateDevice()">Vibrate</button>
+
+    <h2>result: <span id="spanlist"></span> </h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
