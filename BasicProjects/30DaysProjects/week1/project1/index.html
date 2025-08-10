@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        } 
+        .dark-mode{
+            background-color: black;
+            color: rgb(235, 237, 240);
+        }
+        h2{
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+
+        }
+        #textarea {
+            width: 80%;
+            height: 200px;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #buttons{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+        button:hover{
+            background-color: #0056b3;
+            transition: 3sec ease;
+        }
+        #textarea1 {
+            width: 80%;
+            height: 200px;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h2>Welcome To Note Application</h2>
+        <div id="buttons">
+        <button id="copy" onclick="copy()">Copy Note</button>
+        <button id="paste" onclick="paste()">Paste Note</button>
+        <button id="save" onclick="save()">Save Note</button>
+        <button id="clear" onclick="clear()">Clear Note</button>
+        <button onclick="openNote()">open Note</button>
+        <button id="toggleTheme">Dark Mode</button>
+    </div>
+    <h4>Enter Your Note</h4>
+    <textarea name="textarea" id="textarea" placeholder="enter Sample Note...... "></textarea> 
+    <h4>Your Saved Note</h4>
+    <textarea name="textarea1" id="textarea1" placeholder="Your Saved Note ......"></textarea>
+    
+    <h3>Results: <span id="results"></span> </h3>
+    <ul id="list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
